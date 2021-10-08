@@ -3899,20 +3899,6 @@ case "asupan3": // by itsmevall
           }
         });
         break;
-      case "tiktokdl":
-        var gh = args.join("");
-        var link = gh.split("|")[0];
-        var tipe = gh.split("|")[1];
-        var bv = await fetchJson(
-          `https://api.dhnjing.xyz/downloader/tiktok/nowatermark?url=${link}`
-        );
-        if (tipe == "audio") {
-          sendMediaURL(from, bv.result.media_resources.music.playUrl, "");
-        }
-        if (tipe == "video") {
-          sendMediaURL(from, bv.result.media_resources.video.videoUrl, "");
-        }
-        break;
 case 'setprefix':
       if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
        if (args.length < 1) return reply(`Masukkan prefix\nOptions :\n=> multi\n=> nopref`)
